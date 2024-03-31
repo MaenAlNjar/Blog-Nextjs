@@ -1,0 +1,32 @@
+.imgContainer {
+  flex: 1;
+  position: relative;
+  height: calc(100vh - 200px);
+}
+
+.textContainer {
+  flex: 2;
+
+  gap: 50px;
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.title {
+  color: gray;
+  font-weight: bold;
+}
+
+.date {
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .imgContainer {
+    display: none;
+  }
+}

@@ -1,0 +1,56 @@
+.link {
+  min-width: 100px;
+  padding: 10px;
+  border-radius: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+.active {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+.logout {
+  padding: 10px;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
+.menuButton,
+.mobileLinks {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .link {
+    display: none;
+  }
+  .logout {
+    display: none;
+  }
+  .menuButton {
+    display: block;
+    cursor: pointer;
+  }
+
+  .links {
+    min-width: 100px;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .mobileLinks {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 50%;
+    height: calc(100vh - 100px);
+    background-color: rgb(17, 12, 17);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+}
